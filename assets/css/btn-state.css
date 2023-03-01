@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+}
+
+h2{
+width: 640px;
+height: 48px;
+font-weight: 400;
+font-size: 48px;
+line-height: 48px;
+margin-top: 96px;
+}
+.list-items{
+width: 900px;
+height: 48px;
+font-weight: 400;
+font-size: 24px;
+line-height: 48px;
+margin-top: 18px;
+}
+.card_body_col{
+  min-height: 393px;
+  min-width: 300px;
+}
+.card-body{ 
+  
+  min-height: 393px;
+  min-width: 260px;
+}
+.btn-main{
+min-width: 248px;
+width: 248px;
+height: 60px;
+padding: 15px;
+border: none;
+border-radius: 30px;
+color: #F8F9FA;
+}
+.card-body{
+  background-color: #F8F9FA;
+}
+.card-text{
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+}
+.btn_hover{
+  background-color: rgb(251, 251, 14);
+  color: #000000;
+}
+.btn_hover:hover{
+  background-color: rgb(255, 0, 234);
+  color: blue;
+}
+.btn_focus{
+  background-color: red;
+}
+.btn_focus:focus{
+  outline:invert;
+  box-shadow:0 0 0 20px rgba(6, 254, 93, 0.719);
+}
+.btn_active{
+  background-color: #000000;
+}
+.btn_active:active{
+  background-color: purple;
+  border: 5px solid yellowgreen;
+  color: blue;
+}
+.btn_circle{
+width: 119.83px;
+height: 120px;
+border-radius: 90px;
+margin-right: 45px;
+border: none;
+}

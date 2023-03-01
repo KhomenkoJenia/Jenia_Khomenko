@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/booststap_page.css">
+    <link rel="stylesheet" href="assets/css/btn-state.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container ">
+            <h2>Example: hover/active/focus</h2>
+            <ul>
+                <li class="list-items">Реализовать состояния hover/active/focus и дописать описане к кнопкам</li>
+            </ul>
+            <div class="row mt-2 d-flex flex-wrap">
+                <div class="col-3 card_body_col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <button type="button" class="btn-main bg-primary mt-5 mb-3">Default</button>
+
+                            <p class="card-text">Defoutl - Значение кнопки по умолчанию</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 card_body_col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <button type="button" class="btn-main mt-5 mb-3 btn_hover">Hover</button>
+
+                            <p class="card-text">:hover - срабатывает, когда пользователь наводит на элемент курсор мыши.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 card_body_col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <button type="button" class="btn-main btn_focus mt-5 mb-3">Focus</button>
+
+                            <p class="card-text">:focus - срабатывает, когда элемент получает фокус.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 card_body_col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <button type="button" class="btn-main btn_active mt-5 mb-3">Active</button>
+
+                            <p class="card-text">:active - срабатывает, когда нажимате левой кнопкой мыши или удерживаете</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <h2>Description: hover/active/focus</h2>
+            <ul>
+                <li class="list-items">Менеджер проекта считает тебя телепатом и говорит “Наведи порядок в этом блоке)” </li>
+            </ul>
+            <div class="row mt-2 d-flex flex-wrap">
+
+                <div class="col-3 mb-5 card_body_col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <button type="button" class="btn_circle bg-primary mt-5 mb-3 text-start "></button>
+                            <h5 class="card-title mb-4">Состояние default:</h5>
+                            <p class="card-text">— Активное или нажатое состояние сообщает о том, что пользователь нажал на кнопку но не отпустил её.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 card_body_col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <button type="button" class="btn_circle mt-5 mb-3 btn_hover"></button>
+                            <h5 class="card-title mb-4">Состояние  Hover:</h5>
+                            <p class="card-text">— Pод одноклеточных зелёных водорослей из семейства Хламидомонадовые (Chlamydomonadaceae).</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-3 card_body_col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <button type="button" class="btn_circle btn_focus mt-5 mb-3"></button>
+                            <h5 class="card-title mb-4">Состояние focus:</h5>
+                            <p class="card-text">— Cообщает, что компонент в дефолтном состоянии, интерактивен и включен.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 card_body_col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <button type="button" class="btn_circle btn_active mt-5 mb-3"></button>
+                            <h5 class="card-title mb-4">Состояние active:</h5>
+                            <p class="card-text">— Cообщает, что пользователь выделил элемент, используя клавиатуру или другой метод ввода.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <script src="../Home-11/assets/js/booststrap_bundle.js"></script>
+</body>
+
+</html>

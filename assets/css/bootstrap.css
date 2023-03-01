@@ -1,0 +1,47 @@
+#carouselExampleControls {
+  max-width: 1400px;
+
+  margin: 40px 0 200px 0;
+
+}
+
+
+
+.progress {
+  margin: 25px auto;
+}
+
+
+
+.btn-secondary {
+  background-color: rgb(66, 66, 252);
+  color: rgb(255, 247, 1);
+  border: none;
+  font-size: 30px;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  margin-right: 840px;
+}
+
+.main_activity {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.nav_tab_bar {
+  flex-grow: 1;
+}
+
+.items_site {
+  flex-grow: 5;
+}
+
+.spinner-border.text-primary {
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+

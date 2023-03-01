@@ -1,0 +1,125 @@
+#button {
+  display: inline-block;
+  background-color: #ce18f3;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+a{ 
+    text-decoration: none; 
+}
+
+
+.nav_sicial {
+  margin: 120px 0;
+}
+.social_list {
+  display: flex;
+}
+
+.social_list .item {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  list-style: none;
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+  background-image: url(../img/sprite.jpg);
+  transition: .3s;
+}
+
+.social-list .item:hover {
+  transform: scale(1.4);
+}
+
+.social-list .item a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.inst{
+  background-position: -18px -113px;
+}
+.inst:hover{
+  background-position: -18px -428px;
+}
+.inst:active{
+  background-position: -18px -731px;
+}
+.git{
+  background-position: -436px -9px;
+}
+.git:hover{
+  background-position: -436px -319px;
+}
+.git:active{
+  background-position: -436px -630px;
+}
+.linkin{
+  background-position: -125px -113px;
+}
+.linkin:hover{
+  background-position: -125px -421px;
+}
+.linkin:active{
+  background-position: -125px -734px;
+}
+
+
+
+.example-measurement {
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+.vh {
+  font-size: 2.5vh;
+}
+
+.vw {
+  font-size: 1.2vw;
+}
+
+html {
+  font-size: 20px;
+}
+
+.rem {
+  font-size: 1rem;
+}
+
+.parent-em{
+  font-size: 32px;
+}
+
+.em {
+  font-size: 1em;
+}
