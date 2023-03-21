@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(132, 135, 134);
+}
+h1 {
+	text-align: center;
+	font-size: 35px;
+}
+.build-map {
+	position: relative;
+	padding: 50px;
+}
+.city-future {
+	border: 4px solid #000000;
+	border-radius: 16px;
+}
+.build-info {
+	width: 219px;
+	border: 2px solid rgb(44, 19, 70);
+	border-radius: 16px;
+	padding: 10px;
+	font-size: 14px;
+	gap: 15px;
+	display: grid;
+	position: absolute;
+	right: 60px;
+	bottom: 65px;
+	color: #0165d0;
+	background: #000000b8;
+}
+
+path {
+	fill: #e91e6200;
+	cursor: pointer;
+}
+
+path:hover {
+	fill: #e1ff0084;
+}
+
+.build-path {
+	stroke-width: 4px;
+}
+
+.build-number circle {
+	fill: #0165d0;
+	fill-opacity: 0.68;
+	stroke: black;
+	stroke-width: 2;
+}
+circle:hover {
+	fill: #d0c201;
+}
+
+.build-number text {
+	font-size: 26px;
+	font-weight: 600;
+}
