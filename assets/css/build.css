@@ -36,25 +36,36 @@ path {
 	cursor: pointer;
 }
 
-path:hover {
-	fill: #e1ff0084;
+.build-item:hover path {
+	fill: #00ff7787;
+}
+.build-red:hover path {
+	fill: #ff040087;
 }
 
 .build-path {
 	stroke-width: 4px;
 }
-
+.build-number text,
 .build-number circle {
-	fill: #0165d0;
+	cursor: pointer;
+}
+.build-number circle {
+	fill: #464748;
 	fill-opacity: 0.68;
 	stroke: black;
 	stroke-width: 2;
-}
-circle:hover {
-	fill: #d0c201;
 }
 
 .build-number text {
 	font-size: 26px;
 	font-weight: 600;
+	cursor: pointer;
+}
+.box-information {
+	display: flex;
+}
+.box-information > div {
+	margin-left: 10px;
+	color: wheat;
 }

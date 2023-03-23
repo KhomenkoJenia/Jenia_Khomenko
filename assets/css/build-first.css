@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(132, 135, 134);
+}
+h1 {
+	text-align: center;
+	font-size: 35px;
+}
+.container {
+	display: flex;
+	align-items: center;
+}
+.info-box {
+	margin-left: 50px;
+	padding: 50px;
+	border: 3px solid gray;
+	border-radius: 16px;
+}
+.box {
+	max-width: 300px;
+	padding: 10px;
+	display: flex;
+	font-size: 20px;
+	color: antiquewhite;
+}
+.box > div {
+	margin-left: 20px;
+}
+.build-floors {
+	position: relative;
+
+	width: 1100px;
+}
+path {
+	fill: #e91e6200;
+	cursor: pointer;
+}
+.build-item:hover path {
+	fill: #00ffeab3;
+	stroke: #498ae0f3;
+	stroke-width: "10";
+}
+.build-red:hover path {
+	fill: #ff040087;
+	stroke: #eb4141f3;
+	stroke-width: "10";
+}
