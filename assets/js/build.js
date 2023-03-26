@@ -8,6 +8,11 @@ buildItem.forEach((item) => {
 	buildSale.forEach((element) => {
 		element.classList.add("build-red");
 		element.setAttribute("data-flats-number", "Дом Продан");
+
+		element.closest("a").addEventListener("click", (e) => {
+			e.preventDefault();
+			console.log("click not");
+		});
 	});
 
 	item.addEventListener("mouseover", () => {

@@ -18,7 +18,7 @@ h1 {
 }
 .build-info {
 	width: 219px;
-	border: 2px solid rgb(44, 19, 70);
+	border: 2px solid rgb(61, 59, 63);
 	border-radius: 16px;
 	padding: 10px;
 	font-size: 14px;
@@ -27,20 +27,32 @@ h1 {
 	position: absolute;
 	right: 60px;
 	bottom: 65px;
-	color: #0165d0;
-	background: #000000b8;
+	color: #0e0f10;
+	background: #a2a0a0b8;
+}
+.vector-show {
+	display: none;
 }
 
 path {
 	fill: #e91e6200;
-	cursor: pointer;
 }
 
 .build-item:hover path {
 	fill: #00ff7787;
 }
+.build-item:hover .status-hide {
+	fill: #00ff77da;
+}
 .build-red:hover path {
 	fill: #ff040087;
+}
+.build-red:hover {
+	cursor: url(../img/close.png) 30 30, auto;
+}
+
+.build-item:hover .status-show {
+	fill: #ff0400d4;
 }
 
 .build-path {
@@ -68,4 +80,12 @@ path {
 .box-information > div {
 	margin-left: 10px;
 	color: wheat;
+}
+.build-item .status-show,
+.build-item.build-red .status-hide {
+	display: none;
+}
+
+.build-item.build-red .status-show {
+	display: block;
 }

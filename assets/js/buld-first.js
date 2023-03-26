@@ -17,3 +17,5 @@ buildTower.forEach((item) => {
 		showFloors.innerText = floors;
 	});
 });
+
+const flatsTower = document.querySelectorAll(".flats-build");
