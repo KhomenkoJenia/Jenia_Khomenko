@@ -59,20 +59,20 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modal-flats" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="modal-flats" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
 							План поверху
 						</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <svg width="900" height="600" viewBox="0 0 901 558" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="img-fluid" width="800" viewBox="0 0 901 558" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Group 3">
                             <image class="img-map" xlink:href="assets/img/build-floors.png"></image>
-                            <g class="flats-build" data-number-flats="1" data-status="action">
+                            <g class="flats-build" data-status="action">
                                 <path id="path-1" d="M178 12H350V252.5H178V307H92.5V467H3.5V97.5H165V47H178V12Z" />
                                 <g id="status-flats">
                                     <g id="Rectangle 35" filter="url(#filter0_d_26_81)">
@@ -80,15 +80,17 @@
                                         <rect x="13.5" y="113.5" width="136" height="35" stroke="black" stroke-width="3" />
                                     </g>
                                     <text class="status-flats-now" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="55" y="135.864">hi</tspan>
+                                        <tspan class="flat-status" x="55" y="135.864">
+                                            action
+                                        </tspan>
                                     </text>
-                                    <rect id="Rectangle 36" x="13.5" y="113.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
+                                    <rect class="flat-number-bg" id="Rectangle 36" x="13.5" y="113.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
                                     <text id="1" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="28" y="135.864">1</tspan>
+                                        <tspan class="flat-number-bg" x="28" y="135.864">1</tspan>
                                     </text>
                                 </g>
                             </g>
-                            <g class="flats-build" data-number-flats="1" data-status="action">
+                            <g class="flats-build" data-status="booked">
                                 <path id="path-2" d="M101 315.5V467H167V518H179V555H344V311H248.5V261.5H185.5V315.5H101Z" />
                                 <g id="status-flats_2">
                                     <g id="Rectangle 35_2" filter="url(#filter1_d_26_81)">
@@ -96,15 +98,17 @@
                                         <rect x="109.5" y="323.5" width="136" height="35" stroke="black" stroke-width="3" />
                                     </g>
                                     <text class="status-flats-now" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="151" y="345.864"></tspan>
+                                        <tspan class="flat-status" x="151" y="345.864">
+                                            action
+                                        </tspan>
                                     </text>
-                                    <rect id="Rectangle 36_2" x="109.5" y="323.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
+                                    <rect class="flat-number-bg" id="Rectangle 36_2" x="109.5" y="323.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
                                     <text id="1_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="124" y="345.864">1</tspan>
+                                        <tspan x="124" y="345.864">2</tspan>
                                     </text>
                                 </g>
                             </g>
-                            <g class="flats-build" data-number-flats="3" data-status="reserved">
+                            <g class="flats-build" data-status="sold">
                                 <path id="path-3" d="M353.5 551.5V309.5H550V551.5H353.5Z" />
                                 <g id="status-flats_3">
                                     <g id="Rectangle 35_3" filter="url(#filter2_d_26_81)">
@@ -112,11 +116,13 @@
                                         <rect x="354.5" y="323.5" width="136" height="35" stroke="black" stroke-width="3" />
                                     </g>
                                     <text class="status-flats-now" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="396" y="345.864"></tspan>
+                                        <tspan class="flat-status" x="396" y="345.864">
+                                            action
+                                        </tspan>
                                     </text>
-                                    <rect id="Rectangle 36_3" x="354.5" y="323.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
+                                    <rect class="flat-number-bg" id="Rectangle 36_3" x="354.5" y="323.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
                                     <text id="1_3" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="369" y="345.864">1</tspan>
+                                        <tspan x="369" y="345.864">3</tspan>
                                     </text>
                                 </g>
                             </g>
@@ -128,15 +134,17 @@
                                         <rect x="657.5" y="420.5" width="136" height="35" stroke="black" stroke-width="3" />
                                     </g>
                                     <text class="status-flats-now" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="699" y="442.864"></tspan>
+                                        <tspan class="flat-status" x="699" y="442.864">
+                                            action
+                                        </tspan>
                                     </text>
-                                    <rect id="Rectangle 36_4" x="657.5" y="420.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
+                                    <rect class="flat-number-bg" id="Rectangle 36_4" x="657.5" y="420.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
                                     <text id="1_4" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="672" y="442.864">1</tspan>
+                                        <tspan x="672" y="442.864">4</tspan>
                                     </text>
                                 </g>
                             </g>
-                            <g class="flats-build" data-number-flats="5" data-status="sold">
+                            <g class="flats-build" data-status="sold">
                                 <path id="path-3_2" d="M552 256.5V12.5H723.5V47.5H734V99H899V467.5H810V306.5H727.5V249H642V256.5H552Z" />
                                 <g id="status-flats_5">
                                     <g id="Rectangle 35_5" filter="url(#filter4_d_26_81)">
@@ -144,16 +152,62 @@
                                         <rect x="577.5" y="60.5" width="136" height="35" stroke="black" stroke-width="3" />
                                     </g>
                                     <text class="status-flats-now" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="619" y="82.8636"></tspan>
+                                        <tspan class="flat-status" x="619" y="82.8636"></tspan>
                                     </text>
-                                    <rect id="Rectangle 36_5" x="577.5" y="60.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
+                                    <rect class="flat-number-bg" id="Rectangle 36_5" x="577.5" y="60.5" width="35" height="35" fill="#EAA3A3" stroke="black" stroke-width="3" />
                                     <text id="1_5" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em">
-                                        <tspan x="592" y="82.8636">1</tspan>
+                                        <tspan x="592" y="82.8636">5</tspan>
                                     </text>
                                 </g>
                             </g>
                         </g>
                     </svg>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animathion" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+							План квартири
+						</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="room-box">
+                        <div id="room-name">Назва</div>
+                        <div id="room-square">Площа</div>
+                    </div>
+                    <svg width="400" class="img-fluid" viewBox="0 0 910 1001" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Group 4">
+                            <image width="910" xlink:href="assets/img/plan-room.png" y="-150"></image>
+
+                            <rect width="910" height="1001" fill="url(#pattern0)" />
+                            <g class="room-build" data-name-room="Вітальня" data-squere="30 м">
+                                <path id="vector1" d="M419.5 597V342H493.5V293H802.5L854.5 947.5H439.5V597H419.5Z" />
+                            </g>
+                            <g class="room-build" data-name-room="Ванна" data-squere="10 м">
+                                <path id="vector3" d="M241.5 676H94.5L83.5 809H430.5V616.5H410.5V600.5H279.5L241.5 676Z" />
+                            </g>
+                            <g class="room-build" data-name-room="Коридор" data-squere="15 м">
+                                <path id="vector3_2" d="M205.5 422.5H65.5L51 557.5H105L96 663.5H229L265 588H409V406.5H218.5L205.5 422.5Z" />
+                            </g>
+                            <g class="room-build" data-name-room="Кабінет" data-squere="20 м">
+                                <path id="vector4" d="M419.5 333V45L477 4H565L619 45H779L799 273.5H477V333H419.5Z" />
+                            </g>
+                            <g class="room-build" data-name-room="Спальня" data-squere="25 м">
+                                <path id="vector5" d="M103.5 401L128.5 45H407V401H103.5Z" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="modal-footer" data-name-room="room" data-squere="10">
+                    <button class="btn btn-primary" data-bs-target="#modal-flats" data-bs-toggle="modal">
+                        Повернутися назад
+                    </button>
                 </div>
             </div>
         </div>
