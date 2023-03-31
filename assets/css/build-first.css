@@ -36,6 +36,7 @@ h1 {
 	position: relative;
 
 	width: 900px;
+	max-width: 100%;
 }
 path {
 	fill: #e91e6200;
@@ -50,6 +51,7 @@ path {
 	fill: #ff040087;
 	stroke: #eb4141f3;
 	stroke-width: "10";
+	cursor: url(../img/close.png) 30 30, auto;
 }
 .modal-header {
 	background-color: rgb(191, 185, 185);
@@ -130,4 +132,20 @@ button.btn.btn-primary:active {
 }
 .modal-footer {
 	background-color: rgb(191, 185, 185);
+}
+@media screen and (max-width: 1024px) {
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.info-box {
+		margin-top: 50px;
+		margin-left: 0;
+	}
+	.modal-body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
