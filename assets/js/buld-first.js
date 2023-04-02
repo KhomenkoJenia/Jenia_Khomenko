@@ -51,5 +51,6 @@ buildRoom.forEach((room) => {
 
 		roomName.innerHTML = name;
 		roomSquare.innerHTML = square;
+		console.log("1");
 	});
 });

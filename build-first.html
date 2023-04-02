@@ -5,13 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/neomo-2.1.0/css/neomo.css" />
     <link rel="stylesheet" href="assets/css/booststap_page.css" />
+
     <link rel="stylesheet" href="assets/css/build-first.css" />
     <title>Build First</title>
 </head>
 
 <body>
-    <h1>First</h1>
+    <h1 class="build-info-row inset-dark">First</h1>
     <div class="container">
         <div class="build-floors">
             <svg class="floors-future" class="img-fluid" viewBox="0 0 1600 1203" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -47,12 +49,12 @@
                 </g>
             </svg>
         </div>
-        <div class="info-box">
-            <div class="info-floors box">
+        <div class="info-box build-info-row inset-dark">
+            <div class="info-floors box build-info-row inset-dark">
                 Поверх
                 <div id="floors-number"></div>
             </div>
-            <div class="info-flat box">
+            <div class="info-flat box build-info-row inset-dark">
                 Кількість квартир
                 <div id="flats-number"></div>
             </div>
@@ -176,10 +178,14 @@
 						</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="room-box">
-                        <div id="room-name">Назва</div>
-                        <div id="room-square">Площа</div>
+                <div class="modal-body build-info-row inset-dark">
+                    <div class="room-box build-info-row inset-dark">
+                        <div class="build-info-row inset-dark mb-2" id="room-name">
+                            Назва
+                        </div>
+                        <div class="build-info-row inset-dark" id="room-square">
+                            Площа
+                        </div>
                     </div>
                     <svg width="400" class="img-fluid" viewBox="0 0 910 1001" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Group 4">
@@ -205,7 +211,7 @@
                     </svg>
                 </div>
                 <div class="modal-footer" data-name-room="room" data-squere="10">
-                    <button class="btn btn-primary" data-bs-target="#modal-flats" data-bs-toggle="modal">
+                    <button class="button outset-dark m-10" data-bs-target="#modal-flats" data-bs-toggle="modal">
                         Повернутися назад
                     </button>
                 </div>
@@ -214,6 +220,7 @@
     </div>
 
     <script src="assets/js/booststrap_bundle.js"></script>
+    <script src="assets/js/neomo.js"></script>
     <script src="assets/js/buld-first.js"></script>
 </body>
 

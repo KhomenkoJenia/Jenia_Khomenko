@@ -25,3 +25,22 @@ buildItem.forEach((item) => {
 		flatsShow.innerText = dataFlatsNumber;
 	});
 });
+
+const installAccordion = () => {
+	const accordionItemTitle = document.querySelectorAll(
+		".accordion-item__title"
+	);
+	console.log(accordionItemTitle);
+	accordionItemTitle.forEach((item) => {
+		item.addEventListener("click", () => {
+			if (item.closest(".accordion-item").classList.contains("active")) {
+				item.closest(".accordion-item").classList.remove("active");
+				console.log("1");
+			} else {
+				item.closest(".accordion-item").classList.add("active");
+				console.log("1");
+			}
+		});
+	});
+};
+document.querySelector(".accordion") ? installAccordion() : null;

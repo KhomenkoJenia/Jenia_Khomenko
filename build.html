@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>build-project</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/neomo-2.1.0/css/neomo.css" />
     <link rel="stylesheet" href="assets/css/build.css" />
 </head>
 
 <body>
-    <h1>Future city</h1>
+    <h1 class="build-info-row inset-dark">Future city</h1>
     <div class="build-map">
         <svg class="city-future" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 870" fill="none">
             <g>
@@ -155,21 +156,67 @@
             </g>
         </svg>
 
-        <div class="build-info">
-            <div class="build-number box-information">
+        <div class="build-info build-info-row inset-dark">
+            <div class="build-number box-information build-info-row inset-dark">
                 Номер будинку
                 <div id="build-data"></div>
             </div>
-            <div class="build-floors box-information">
+            <div class="build-floors box-information build-info-row inset-dark">
                 Кількість поверхів
                 <div id="floors-data"></div>
             </div>
-            <div class="build-flats box-information">
+            <div class="build-flats box-information build-info-row inset-dark">
                 Кількість квартир
                 <div id="flats-data"></div>
             </div>
         </div>
     </div>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-item__title outset-dark">
+                Опис буденок номер 1
+            </div>
+            <div class="accordion-item__content inset-dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum at,
+                molestiae, molestias autem itaque quibusdam enim deleniti officia
+                omnis ratione quasi? Labore cum fugiat non.
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-item__title outset-dark">
+                Опис буденок номер 2
+            </div>
+            <div class="accordion-item__content inset-dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum at,
+                molestiae, molestias autem itaque quibusdam enim deleniti officia
+                omnis ratione quasi? Labore cum fugiat non.
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-item__title outset-dark">
+                Опис буденок номер 3
+            </div>
+            <div class="accordion-item__content inset-dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum at,
+                molestiae, molestias autem itaque quibusdam enim deleniti officia
+                omnis ratione quasi? Labore cum fugiat non.
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-item__title outset-dark">
+                Опис буденок номер 4
+            </div>
+            <div class="accordion-item__content inset-dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum at,
+                molestiae, molestias autem itaque quibusdam enim deleniti officia
+                omnis ratione quasi? Labore cum fugiat non.
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/neomo.js"></script>
     <script src="assets/js/build.js"></script>
 </body>
 
