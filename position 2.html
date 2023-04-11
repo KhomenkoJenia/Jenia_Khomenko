@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-6</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <link rel="stylesheet" href="assets/css/position.css">
+
+</head>
+
+<body>
+    <main>
+        <selcion class="container">
+
+            <h1>Position</h1>
+            <ul class="example_title">
+
+                <li class="first_line">position: static;</li>
+                <li class="decor_selection">position: relative;(Псевдо елемент::selection)</li>
+                <li>position: absolute;</li>
+                <li>position: fixed;</li>
+                <li>position: sticky;</li>
+            </ul>
+
+            <div class="example static">
+
+                <ul class="example_title">
+
+                    <li>position: static;</li>
+
+                </ul>
+
+                <div class="example_list static">
+                    <div class="example_list-item">1</div>
+                    <div class="example_list-item">2</div>
+                    <div class="example_list-item">3</div>
+                    <div class="example_list-item">4</div>
+                    <div class="example_list-item">5</div>
+                    <div class="example_list-item">6</div>
+                </div>
+            </div>
+
+            <div class="example relative">
+
+                <ul class="example_title">
+                    <li>position: relative;</li>
+
+                </ul>
+
+                <div class="example_list relative">
+                    <div class="example_list-item">1</div>
+                    <div class="example_list-item relative">2</div>
+                    <div class="example_list-item">3</div>
+                    <div class="example_list-item">4</div>
+                    <div class="example_list-item">5</div>
+                    <div class="example_list-item">6</div>
+                </div>
+            </div>
+
+            <div class="example absolute">
+
+                <ul class="example_title">
+                    <li>position: absolute;</li>
+
+                </ul>
+
+                <div class="example_list absolute">
+                    <div class="example_list-item">1</div>
+                    <div class="example_list-item absolute">2</div>
+                    <div class="example_list-item">3</div>
+                    <div class="example_list-item">4</div>
+                    <div class="example_list-item">5</div>
+                    <div class="example_list-item">6</div>
+                </div>
+            </div>
+
+            <div class="example absolute-relative">
+
+                <ul class="example_title">
+                    <li>position: absolute-relative;</li>
+
+                </ul>
+
+                <div class="example_list absolute">
+                    <div class="example_list-item">1</div>
+                    <div id="relative-absolute" class="example_list-item">
+                        <h5>position: static;</h5>
+                        <div class="position-relative">
+                            <h5>position: relative;</h5>
+                            <div class="position-absolute">
+                                </h5>position: absolute;</h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="example_list-item">3</div>
+                    <div class="example_list-item">4</div>
+                    <div class="example_list-item">5</div>
+                    <div class="example_list-item">6</div>
+                </div>
+            </div>
+
+
+            <div class="example absolute-absolute">
+
+                <ul class="example_title">
+                    <li>position: absolute-absolute;</li>
+
+                </ul>
+                <div class="example_list relative-absolute">
+                    <div class="example_list-item">1</div>
+                    <div id="relative-absolute" class="example_list-item">
+                        <h5>position: static;</h5>
+                        <div class="position-relative">
+                            <h5>position: relative;</h5>
+                            <div class="position-absolute">
+                                </h5>position: absolute;</h5>
+                                <div class="position-absolute"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="example_list-item">3</div>
+                    <div class="example_list-item">4</div>
+                    <div class="example_list-item">5</div>
+                    <div class="example_list-item">6</div>
+                </div>
+            </div>
+
+
+            <div class="example fixed">
+
+                <ul class="example_title">
+                    <li>position: fixed;</li>
+
+                </ul>
+
+                <div class="example_list fixed">
+                    <div class="example_list-item">1</div>
+                    <div class="example_list-item fixed">
+                        <h3>Welocome</h3>
+                    </div>
+                    <div class="example_list-item">3</div>
+                    <div class="example_list-item">4</div>
+                    <div class="example_list-item">5</div>
+                    <div class="example_list-item">6</div>
+                </div>
+            </div>
+
+
+            <div class="example sticky">
+
+                <ul class="example_title">
+                    <li>position: sticky;</li>
+                </ul>
+
+                <div>
+                    <ul class="list">
+                        <li>1</li>
+                        <li class="sticky">2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li class="sticky">5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li class="sticky">10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li class="sticky">15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li class="sticky">20</li>
+                        <li>21</li>
+                        <li class="sticky">22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li class="sticky">25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li class="sticky">30</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="example decoration">
+
+                <ul class="example_title">
+
+                    <li>position: static;</li>
+
+                </ul>
+
+                <div class="example_list">
+                    <div class="example_list-item">1</div>
+                    <div class="example_list-item">2</div>
+                    <div class="example_list-item">3</div>
+                    <div class="example_list-item">4</div>
+                    <div class="example_list-item">5</div>
+                    <div class="example_list-item">6</div>
+                </div>
+
+            </div>
+
+
+        </selcion>
+    </main>
+</body>
+
+</html>
