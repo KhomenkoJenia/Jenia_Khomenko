@@ -1,0 +1,201 @@
+.item-position {
+    position: static;
+    position: relative;
+    position: absolute;
+    position: fixed;
+    position: sticky;
+
+    /* position: inherit; наследование у родителя
+       position: initial; значение по умолчанию */
+}
+
+body {
+    background-color: rgba(207, 207, 207, 0.59);
+}
+
+
+.container {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1::first-letter {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+    font-size: 80px;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 50px auto;
+    margin-bottom: 80px;
+}
+
+.first_line::first-line {
+    color: green;
+    text-transform: uppercase;
+}
+
+.decor_selection::selection {
+    background: gold;
+    color: mediumpurple;
+}
+
+.example_title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.example_list-item {
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+    background-color: rgba(134, 249, 93, 0.675);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgba(12, 12, 12, 0.546);
+
+}
+
+.example {
+    background-color: rgba(255, 247, 9, 0.886);
+    margin-bottom: 40px;
+    padding: 30px 30px;
+
+}
+
+.example_list {
+    background-color: rgba(0, 255, 255, 0.637);
+    display: flex;
+}
+
+.example_list-item.relative {
+    position: relative;
+    top: 30px;
+    left: 40px;
+    background-color: blueviolet;
+}
+
+.example_list-item.absolute {
+    position: absolute;
+    top: 900px;
+    left: 500px;
+    background-color: blueviolet;
+}
+
+#relative-absolute {
+    width: 450px;
+    height: 450px;
+    background-color: rgba(255, 0, 166, 0.651);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+
+.position-relative {
+    display: flex;
+
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 255, 0.608);
+    position: relative;
+
+}
+
+.position-absolute {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.763);
+    position: absolute;
+    top: 70px;
+    left: 40px;
+
+}
+
+.position-absolute .position-absolute {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    left: initial;
+
+}
+
+.example_list-item.fixed {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 180px;
+    height: 60px;
+    font-size: 23px;
+    line-height: 80px;
+    background-color: rgba(81, 255, 0, 0.464);
+    font-weight: 600;
+}
+
+
+ul.list {
+    height: 250px;
+    overflow: auto;
+    max-width: 450px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.list li {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(13, 108, 224, 0.61);
+    color: #fff;
+    padding: 3px 3px;
+}
+
+
+.list li.sticky {
+    background-color: rgba(68, 0, 194, 0.92);
+    position: sticky;
+    top: 5px;
+}
+
+.example.decoration {
+    margin: 100px 0;
+    position: relative;
+}
+
+.decoration::before {
+    content: "";
+    background-image: url(../img/top-border.svg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    top: -90px;
+    right: 3px;
+}
+
+.decoration::after {
+    content: "";
+    background: url(../img/bottom-border.svg) center top / cover no-repeat;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 190px;
+    right: 1px;
+}

@@ -1,0 +1,150 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
+body{
+  background-color: black;
+}
+
+.container{
+  padding-left: 93px;
+  padding-left: 137px;
+  
+}
+.banner {
+  
+  background-position-x: 894px;
+  
+  background-image: url(../img/banner2.png);
+  
+  
+  
+  background-repeat: no-repeat;
+
+}
+.content-salman{
+
+font-weight: 700;
+font-size: 34px;
+line-height: 40px;
+color: aliceblue;
+text-decoration: none;
+margin-right: 48px;
+}
+.content-work{
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.1em;
+color: aliceblue;
+text-decoration: none;
+margin-right: 48px;
+}
+.content-about{
+  font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.1em;
+text-decoration: none;
+color: aliceblue;
+margin-right: 551px;
+}
+.content-link{
+
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.1em;
+text-decoration: none;
+color: aliceblue;
+}
+nav{
+  
+ 
+}
+.content-items{
+  margin-top: 40px;
+  display: flex;
+  
+  justify-content: flex-start;
+  align-items: baseline;
+  
+}
+.content-global{
+  margin-top: 187px;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+.conten-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 40px;
+}
+.logo-img{
+  margin-top: 35px;
+}
+.main-title{
+  padding-left: 40px;
+width: 753px;
+
+border-left: 2px solid rgba(252, 252, 250, 0.61);
+}
+.content-main{
+font-weight: 300;
+font-size: 26px;
+line-height: 30px;
+letter-spacing: 0.1em;
+color: rgba(240, 248, 255, 0.462);
+}
+.content-secondary{
+  margin-top: 16px;
+  font-weight: 600;
+font-size: 65px;
+line-height: 82px;
+color: aliceblue;
+}
+.content-third{
+  margin-top: 26px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+/* identical to box height */
+letter-spacing: 0.1em;
+color: aliceblue;
+}
+hr{
+  width: 232px;
+  margin-left: 50px;
+  background: none;
+  color: aliceblue;
+}
+
+.info-centre{
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.page-item-first{
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.1em;
+text-decoration: none;
+color: #ffffffda;
+}
+.page-item{
+  text-decoration: none;
+  margin-left: 72px;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.1em;
+
+color: #ffffffa3;
+
+}

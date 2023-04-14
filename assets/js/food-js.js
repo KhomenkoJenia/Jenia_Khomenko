@@ -95,8 +95,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	//модальное вікно
 	const modalTrigger = document.querySelectorAll("[data-modal]"),
-		modal = document.querySelector(".modal"),
-		modalCloseBtn = document.querySelector("[data-close]");
+		modal = document.querySelector(".modal");
 
 	function openModal() {
 		modal.classList.add("show");
@@ -114,9 +113,9 @@ window.addEventListener("DOMContentLoaded", () => {
 		modal.classList.remove("show");
 		document.body.style.overflow = "";
 	}
-	modalCloseBtn.addEventListener("click", closeMoadl);
+
 	modal.addEventListener("click", (e) => {
-		if (e.target === modal) {
+		if (e.target === modal || e.target.getAttribute("data-close") == "") {
 			closeMoadl();
 		}
 	});
@@ -203,4 +202,69 @@ window.addEventListener("DOMContentLoaded", () => {
 		15,
 		".menu .container"
 	).render();
+
+	const forms = document.querySelectorAll("form");
+
+	forms.forEach((item) => {
+		postData(item);
+	});
+
+	const messege = {
+		loading: "Loding",
+		success: "Succes",
+		failure: "Fail",
+	};
+
+	function postData(form) {
+		form.addEventListener("submit", (e) => {
+			e.preventDefault();
+
+			const statusMessage = document.createElement("div");
+			statusMessage.classList.add("status");
+			statusMessage.textContent = messege.loading;
+			form.append(statusMessage);
+
+			const request = new XMLHttpRequest();
+			request.open("POST", "serves.php");
+
+			request.setRequestHeader("Content-type", "multipart/form-data");
+			const formData = new FormData(form);
+
+			request.send(formData);
+			request.addEventListener("load", () => {
+				if (request.status == 200) {
+					console.log(request.response);
+					showThanksModal(messege.success);
+					form.reset();
+					statusMessage.remove();
+				} else {
+					showThanksModal(messege.failure);
+				}
+			});
+		});
+	}
+	function showThanksModal(messege) {
+		const prevModalDialog = document.querySelector(".modal__dialog");
+
+		prevModalDialog.classList.add("hide");
+		openModal();
+
+		const thanksModal = document.createElement("div");
+		thanksModal.classList.add("modal__dialog");
+		thanksModal.innerHTML = `
+	<div class="modal__content">
+	<div class="modal__close" data-close>>&times;</div>
+	<div class="modal__title">${messege}</div>
+	</div>
+	`;
+		document.querySelector(".modal").append(thanksModal);
+		setTimeout(() => {
+			thanksModal.remove();
+			prevModalDialog.classList.add("show");
+			prevModalDialog.classList.remove("hide");
+			closeMoadl();
+		}, 4000);
+	}
 });
+
+//form
