@@ -1,6 +1,6 @@
 const url = "https://dog.ceo/api/breeds/image/random";
 (picture = document.querySelector("#picture")),
-	(picture2 = document.querySelector("#picture2")),
+	(pictureSecond = document.querySelector("#picture2")),
 	(downloadBtn = document.querySelector("#download-btn")),
 	(imgColumn = document.querySelector(".img-column")),
 	(imgLayout = document.querySelectorAll(".img-layout")),
@@ -8,9 +8,7 @@ const url = "https://dog.ceo/api/breeds/image/random";
 
 const downloadImg = () => {
 	fetch(url)
-		.then((response) => {
-			return response.json();
-		})
+		.then((response) => response.json())
 		.then((data) => {
 			picture.setAttribute("src", data.message);
 		});
@@ -25,7 +23,7 @@ imgLayout.forEach((item) => {
 			return response.json();
 		})
 		.then((data) => {
-			picture2.setAttribute("src", data.message);
+			pictureSecond.setAttribute("src", data.message);
 			const imgSrc = data.message,
 				img = document.createElement("img");
 			img.setAttribute("src", imgSrc);
@@ -45,8 +43,8 @@ imgPagination.forEach((item, index, arr) => {
 		removeActive(imgPagination);
 		item.classList.add("active");
 
-		const imgItem = item.querySelector("img");
-		const imgSrc = imgItem.getAttribute("src");
+		const imgItem = item.querySelector("img"),
+			imgSrc = imgItem.getAttribute("src");
 
 		picture2.setAttribute("src", imgSrc);
 	});

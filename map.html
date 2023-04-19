@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map()</title>
+    <link rel="stylesheet" href="assets/css/map.css" />
+</head>
+
+<body>
+    <div class="sort-container">
+        <div class="radio-row">
+            <div>
+                <label for="genderFilterMale">Чоловіки</label>
+                <input class="checkbox-input" type="radio" id="genderFilterMale" name="genderFilter" value="male" />
+            </div>
+            <div>
+                <label for="genderFilterFemale">Жінкі</label>
+                <input class="checkbox-input" type="radio" id="genderFilterFemale" name="genderFilter" value="female" />
+            </div>
+            <div>
+                <label for="all">Всі</label>
+                <input class="checkbox-input" type="radio" id="all" name="genderFilter" value="all" checked />
+            </div>
+        </div>
+        <div class="range-row">
+            <label for="ageFilter">Вік:</label>
+            <input class="range-round" type="range" id="ageFilter" name="ageFilter" min="16" max="74" />
+        </div>
+    </div>
+    <div class="users-container">
+        <div class="users"></div>
+    </div>
+
+    <script src="assets/js/map.js"></script>
+</body>
+
+</html>

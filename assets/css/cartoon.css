@@ -87,7 +87,10 @@ body {
 	transform: scale(1.1);
 	transition: all 0.3s ease 0s;
 }
-
+.img-layout.active img {
+	border: 2px solid white;
+	transform: scale(1.2);
+}
 .has-pagination {
 	display: flex;
 }
